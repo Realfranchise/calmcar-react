@@ -270,13 +270,13 @@
         flex-direction: column !important;
     }
     
-    /* Put image right after title on mobile */
+    /* Put image first on mobile for Café Robot and MR-X */
     .product-showcase .product-info {
-        order: 1;
+        order: 2;
     }
     
     .product-showcase .product-image {
-        order: 2;
+        order: 1;
         margin: 0 1rem;
     }
     
@@ -449,7 +449,7 @@
     }
     
     .tech-image {
-        height: 150px !important;
+        height: 250px !important;
     }
     
     /* Performance metrics cards */
