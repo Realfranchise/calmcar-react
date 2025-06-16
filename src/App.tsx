@@ -1,24 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './App-mobile.css';
+import { useScrollAnimation } from './hooks/useScrollAnimation';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import PartnerBadges from './components/PartnerBadges';
+import Solutions from './components/Solutions';
+import Technology from './components/Technology';
+import FutureTech from './components/FutureTech';
+import RobotShowcase from './components/RobotShowcase';
+import MotorPortfolio from './components/MotorPortfolio';
+import Resources from './components/Resources';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
+  useScrollAnimation();
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Hero />
+      <PartnerBadges />
+      <Solutions />
+      <Technology />
+      <FutureTech />
+      <RobotShowcase />
+      <MotorPortfolio />
+      <Resources />
+      <Contact />
+      <Footer />
     </div>
   );
 }

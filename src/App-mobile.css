@@ -1,0 +1,574 @@
+/* Mobile Specific Improvements */
+@media (max-width: 768px) {
+    /* Global Mobile Settings */
+    .container {
+        padding: 0 1rem;
+    }
+    
+    /* Reset any global image filters on mobile */
+    img {
+        filter: none !important;
+        -webkit-filter: none !important;
+    }
+    
+    /* Hide top bar text on mobile - show only logo */
+    .top-bar {
+        display: none;
+    }
+    
+    /* Ensure header background doesn't affect logo visibility */
+    .header {
+        background: rgba(0, 0, 0, 0.9) !important;
+    }
+    
+    .header.scrolled {
+        background: rgba(0, 0, 0, 0.95) !important;
+    }
+    
+    .main-nav {
+        padding: 0.75rem 0;
+    }
+    
+    /* Logo with original colors on mobile */
+    .header .logo,
+    .main-nav .logo,
+    .nav-content .logo,
+    img.logo {
+        height: 35px !important;
+        width: auto !important;
+        filter: none !important;
+        -webkit-filter: none !important;
+        opacity: 1 !important;
+        mix-blend-mode: normal !important;
+        max-width: 150px !important;
+    }
+    
+    /* Force logo colors */
+    img[alt="CalmCar Logo"] {
+        filter: none !important;
+        -webkit-filter: none !important;
+        opacity: 1 !important;
+    }
+    
+    /* Override any hover states */
+    .header .logo:hover,
+    .main-nav .logo:hover {
+        opacity: 1 !important;
+        filter: none !important;
+    }
+
+    /* Hero Section Mobile Fixes */
+    .hero {
+        height: 65vh;
+        min-height: 400px;
+        padding-top: 60px;
+    }
+    
+    /* Crop bottom 10% of hero image on mobile */
+    .hero-background {
+        object-position: center top !important;
+        height: 110% !important;
+        top: -5% !important;
+    }
+    
+    .hero-content {
+        transform: translateX(0) translateY(0) !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .hero-text {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.4rem !important;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Simplify subtitle on mobile */
+    .hero-text .subtitle {
+        font-size: 0.875rem !important;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-text .subtitle br {
+        display: none;
+    }
+    
+    /* Compact stats */
+    .hero-stats {
+        gap: 0.5rem !important;
+        flex-direction: row !important;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+    
+    .stat-item {
+        flex: 1;
+        text-align: center;
+        max-width: 100px;
+    }
+    
+    /* Hide middle stat on mobile */
+    .stat-item:nth-child(2) {
+        display: none;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem !important;
+        font-weight: 700;
+    }
+    
+    .stat-label {
+        font-size: 0.65rem !important;
+        line-height: 1.1;
+        opacity: 0.8;
+    }
+    
+    /* Hide download button on mobile */
+    .hero .btn-ghost {
+        display: none;
+    }
+
+    /* Partner Badges Mobile */
+    .partner-badges {
+        padding: 2rem 0 !important;
+    }
+    
+    .partner-logos {
+        gap: 1rem !important;
+    }
+    
+    .partner-row {
+        gap: 1rem !important;
+        justify-content: center;
+    }
+    
+    .partner-logo {
+        height: 40px !important;
+        max-width: 80px !important;
+    }
+
+    /* All Sections Mobile Padding */
+    .solutions,
+    .technology,
+    .future-tech,
+    .robot-showcase,
+    .resources {
+        padding: 3rem 0 !important;
+    }
+
+    /* Section Headers Mobile */
+    .section-header {
+        margin-bottom: 2rem !important;
+    }
+    
+    .section-title {
+        font-size: 1.5rem !important;
+        margin-bottom: 0.5rem;
+        padding: 0 1rem;
+    }
+    
+    .section-desc {
+        font-size: 0.875rem !important;
+        line-height: 1.5;
+        padding: 0 1rem;
+    }
+
+    /* Solutions Grid Mobile */
+    .solutions-grid {
+        padding: 0 1rem;
+        gap: 1rem !important;
+    }
+    
+    /* Compact cards on mobile */
+    .solution-card {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+    }
+    
+    .solution-content {
+        padding: 1rem !important;
+    }
+    
+    .solution-header {
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .solution-icon {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 1.2rem !important;
+    }
+    
+    .solution-title {
+        font-size: 1.1rem !important;
+    }
+    
+    .solution-features {
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .solution-features li {
+        padding: 0.25rem 0 0.25rem 1.2rem !important;
+        font-size: 0.8rem !important;
+        position: relative;
+    }
+    
+    .solution-features li::before {
+        left: 0 !important;
+        top: 0.25rem !important;
+    }
+    
+    .solution-note {
+        font-size: 0.7rem !important;
+        padding: 0.5rem !important;
+    }
+
+    /* Tech Content Mobile */
+    .tech-showcase {
+        padding: 0 1rem;
+    }
+
+    /* Table Mobile */
+    .spec-table {
+        font-size: 0.7rem !important;
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .spec-table th,
+    .spec-table td {
+        padding: 0.4rem !important;
+        font-size: 0.7rem !important;
+        white-space: nowrap;
+    }
+    
+    .spec-table td:first-child {
+        white-space: normal;
+        min-width: 120px;
+    }
+    
+    .tech-content {
+        padding: 1rem !important;
+        overflow-x: auto;
+    }
+
+    /* Product Showcase Mobile */
+    .product-showcase {
+        padding: 0 !important;
+        gap: 1rem !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    /* Put image right after title on mobile */
+    .product-showcase .product-info {
+        order: 1;
+    }
+    
+    .product-showcase .product-image {
+        order: 2;
+        margin: 0 1rem;
+    }
+    
+    .product-info h3 {
+        font-size: 1.25rem !important;
+        margin-bottom: 0.25rem !important;
+        padding: 0 1rem;
+    }
+    
+    .product-info > p {
+        font-size: 0.8rem !important;
+        margin-bottom: 0.5rem !important;
+        padding: 0 1rem;
+    }
+    
+    .product-specs {
+        font-size: 0.7rem !important;
+        padding: 0.75rem 1rem !important;
+        margin: 0 1rem;
+        background: var(--light-gray) !important;
+        border-radius: 6px !important;
+        order: 3;
+    }
+    
+    .product-specs h4 {
+        font-size: 0.8rem !important;
+        margin-bottom: 0.25rem !important;
+    }
+    
+    .product-specs ul li {
+        font-size: 0.7rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 0.2rem !important;
+    }
+    
+    .product-image {
+        height: 180px !important;
+        padding: 5px !important;
+        object-fit: contain !important;
+    }
+
+    /* Robot Grid Mobile */
+    .robot-grid {
+        padding: 0 1rem;
+        gap: 0.75rem !important;
+    }
+    
+    .robot-card {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+    }
+    
+    .robot-specs {
+        padding: 0.75rem !important;
+    }
+    
+    .robot-specs h4 {
+        font-size: 0.9rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .robot-specs p {
+        font-size: 0.7rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 0.15rem !important;
+    }
+    
+    .robot-specs p strong {
+        font-size: 0.7rem !important;
+    }
+    
+    /* Service robot images - centered and optimized */
+    .robot-image {
+        height: 300px !important;
+        object-fit: contain !important;
+        padding: 15px !important;
+        background: #f8f9fa;
+    }
+
+    /* Video Gallery Mobile */
+    .video-gallery {
+        padding: 0 1rem;
+    }
+    
+    .video-info h3 {
+        font-size: 1.125rem !important;
+    }
+    
+    .video-info p {
+        font-size: 0.8rem !important;
+    }
+
+    /* Motor Grid Mobile */
+    .motor-grid {
+        padding: 0 1rem;
+    }
+    
+    .motor-model {
+        font-size: 0.875rem !important;
+    }
+    
+    .motor-specs {
+        font-size: 0.7rem !important;
+    }
+    
+    .expand-motors-btn {
+        font-size: 0.875rem !important;
+        padding: 0.75rem 1.5rem !important;
+    }
+
+    /* Resource Grid Mobile */
+    .resource-grid {
+        padding: 0 1rem;
+    }
+    
+    .resource-card h3 {
+        font-size: 1rem !important;
+    }
+    
+    .resource-card p {
+        font-size: 0.8rem !important;
+    }
+    
+    .btn-secondary {
+        font-size: 0.875rem !important;
+        padding: 0.5rem 1rem !important;
+    }
+
+    /* Tab Buttons Mobile */
+    .tab-button {
+        font-size: 0.875rem !important;
+        padding: 0.6rem 1rem !important;
+    }
+
+    /* Contact Form Mobile */
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        font-size: 0.875rem !important;
+    }
+    
+    /* Additional Mobile UX Improvements */
+    
+    /* Improve touch targets */
+    button, a, .tab-button {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Hide scroll indicator on mobile */
+    .scroll-indicator {
+        display: none !important;
+    }
+    
+    /* Tech cards more compact */
+    .tech-card {
+        padding: 1rem !important;
+        margin-bottom: 0.75rem;
+    }
+    
+    .tech-card h3 {
+        font-size: 1rem !important;
+        margin: 0.5rem 0 !important;
+    }
+    
+    .tech-card p {
+        font-size: 0.8rem !important;
+        line-height: 1.3 !important;
+    }
+    
+    .tech-image {
+        height: 150px !important;
+    }
+    
+    /* Performance metrics cards */
+    .metric-card {
+        padding: 1rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .metric-card h4 {
+        font-size: 0.9rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .metric-value {
+        font-size: 1.5rem !important;
+    }
+    
+    .metric-desc {
+        font-size: 0.875rem !important;
+    }
+    
+    .metric-note {
+        font-size: 0.7rem !important;
+    }
+    
+    .metric-card ul li {
+        font-size: 0.75rem !important;
+        padding: 0.2rem 0 0.2rem 1.2rem !important;
+    }
+    
+    .metric-card li::before {
+        left: 0 !important;
+        top: 0.2rem !important;
+    }
+    
+    /* Mobile navigation improvements */
+    .nav-menu.active {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        padding: 1rem 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        animation: slideDown 0.3s ease;
+    }
+    
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .nav-menu.active li {
+        margin: 0.5rem 0;
+    }
+    
+    .nav-menu.active a {
+        font-size: 1rem;
+        padding: 0.5rem 2rem;
+    }
+    
+    /* Mobile menu toggle visible */
+    .mobile-menu-toggle {
+        display: flex !important;
+    }
+    
+    /* Contact section mobile */
+    .contact {
+        padding: 3rem 0 !important;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.25rem !important;
+    }
+    
+    .contact-info h4 {
+        font-size: 0.9rem !important;
+    }
+    
+    .contact-info p {
+        font-size: 0.8rem !important;
+    }
+    
+    /* Footer mobile */
+    footer {
+        padding: 2rem 0 !important;
+    }
+    
+    footer p {
+        font-size: 0.75rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .footer-links a {
+        font-size: 0.75rem !important;
+    }
+    
+    /* Remove hover effects on mobile for better performance */
+    .solution-card:hover,
+    .tech-card:hover,
+    .motor-card:hover,
+    .resource-card:hover {
+        transform: none !important;
+    }
+    
+    /* Optimize animations on mobile */
+    .fade-in-up,
+    .fade-in-left,
+    .fade-in-right,
+    .scale-in {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
